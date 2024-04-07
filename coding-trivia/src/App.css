@@ -228,3 +228,30 @@
     transform: rotate(360deg);
   }
 }
+
+.challenge-container.rows-moved .top-row {
+  animation: moveUpwards 3s forwards;
+}
+
+.challenge-container.rows-moved .bottom-row {
+  animation: moveDownwards 3s forwards;
+}
+
+@keyframes moveUpwards {
+  to{
+    transform: translateY(-160px);
+  }
+}
+
+@keyframes moveDownwards {
+  to{
+    transform: translateY(160px);
+  }
+}
+
+.challenge-container {
+  position: relative;
+}
+
+
+
